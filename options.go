@@ -97,6 +97,7 @@ func prepareOptions(opts ...Options) Options {
 	return opt
 }
 
+// PrepareOptions function
 func PrepareOptions(opts ...Options) {
 	opt = prepareOptions(opts...)
 

@@ -71,7 +71,7 @@ func (v *View) AddFuncs(fc ...template.FuncMap) {
 
 func (v *View) Render(w http.ResponseWriter) error {
 
-	// Create a buffer to temporarily write to and check if any errors were encounted.
+	// Create a buffer to temporarily write to and check if any errors were encountered.
 	buf := bufpool.Get()
 	defer bufpool.Put(buf)
 
